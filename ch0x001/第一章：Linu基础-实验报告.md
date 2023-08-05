@@ -37,7 +37,7 @@ lsb_release -a
 
 查询结果如下
 
-![](..\pictures\Find the version of Linux.png)
+![](.\pictures\Find the version of Linux.png)
 
 ##### 1.2 查看当前Linux内核版本信息
 
