@@ -37,7 +37,7 @@ lsb_release -a
 
 查询结果如下
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\Find the version of Linux.png)
+![](./assets/Find the version of Linux.png)
 
 ##### 1.2 查看当前Linux内核版本信息
 
@@ -49,7 +49,7 @@ uname -a
 
 查询结果如下
 
-![KernalVersion](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\Find the kernel version of Linux.png)
+![KernalVersion](./assets/Find the kernel version of Linux.png)
 
 ---
 
@@ -57,19 +57,19 @@ uname -a
 
 假设当前虚拟机的网卡情况如下：
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\InternetCardInformation.png)
+![](./assets/InternetCardInformation.png)
 
 使用`ip a`命令查看当前系统内的网络情况
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\SystemInternetCardInformation.png)
+![](./assets/SystemInternetCardInformation.png)
 
 现在，添加一块新网卡（NAT转换）
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\anothercard.png)
+![](./assets/anothercard.png)
 
 之后再次使用`ip a`指令查看
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\SystemInternetCardInformation.png)
+![](./assets/SystemInternetCardInformation-1691246555777-6.png)
 
 可以看到，由于配置了DHCP服务器，并且采用冷启动方式，系统自动为新添加的网卡分配了一个IP地址和开机自启
 
@@ -104,7 +104,7 @@ test
 
 在Windows中，可以使用`ipconfig`查看
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\hostipaddress.png)
+![](./assets/hostipaddress.png)
 
 之后，可以使用`scp`进行文件传送了
 
@@ -116,11 +116,11 @@ scp test.txt yinya@192.168.100.138:C:/Users/yinya/Desktop/
 
 遇到了问题
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\problem.png)
+![](./assets/problem.png)
 
 上网搜索解决方案，发现本机Windows中没有安装`OpenSSH-Server`服务
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\reason.png)
+![](./assets/reason.png)
 
 安装后继续尝试
 
@@ -149,9 +149,9 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 
 传输成功
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\success.png)
+![](./assets/success.png)
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\file.png)
+![](./assets/file.png)
 
 ##### 3.2 宿主机文件传输至虚拟机
 
@@ -169,7 +169,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
 
 成功
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\transport2.png)
+![](./assets/transport2.png)
 
 ---
 
@@ -181,11 +181,11 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
    ssh-keygen
    ```
 
-   ![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\kengen.png)
+   ![](./assets/kengen.png)
 
 ​		`ls`一下生成目录，可以看到出现了两个文件
 
-​		<img src="C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\kengen2.png" style="zoom: 67%;" />
+​		<img src="./assets/kengen2.png" style="zoom: 67%;" />
 
 ​		其中`id_rsa.pub`为公钥，需要上传至服务器（此处为虚拟机）中
 
@@ -199,7 +199,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
 
    遇到问题，提示命令不存在
 
-   ![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\problem2.png)
+   ![](./assets/problem2.png)
 
    上网查找资料发现，需要使用`scp`指令上传
 
@@ -224,7 +224,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
 
    退出原ssh连接，重新连接，无需输入密码，成功
 
-   ![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\success2.png)
+   ![](./assets/success2.png)
 
 ---
 
