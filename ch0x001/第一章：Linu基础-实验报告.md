@@ -37,7 +37,7 @@ lsb_release -a
 
 查询结果如下
 
-![](C:\Users\yinya\Desktop\Linux系统与网络管理\pictures\Find the version of Linux.png)
+![](..\pictures\Find the version of Linux.png)
 
 ##### 1.2 查看当前Linux内核版本信息
 
