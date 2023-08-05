@@ -37,7 +37,7 @@ lsb_release -a
 
 查询结果如下
 
-![](./assets/Find the version of Linux.png)
+![](./assets/FindtheversionofLinux.png)
 =======
 ##### 1.2 查看当前Linux内核版本信息
 
@@ -49,7 +49,7 @@ uname -a
 
 查询结果如下
 
-![KernalVersion](./assets/Find the kernel version of Linux.png)
+![KernalVersion](./assets/FindthekernelversionofLinux.png)
 =======
 ---
 
