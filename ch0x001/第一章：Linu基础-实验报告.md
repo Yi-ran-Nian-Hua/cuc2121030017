@@ -38,7 +38,7 @@ lsb_release -a
 查询结果如下
 
 ![](./assets/Find the version of Linux.png)
-
+=======
 ##### 1.2 查看当前Linux内核版本信息
 
 使用如下命令即可查看
@@ -50,13 +50,12 @@ uname -a
 查询结果如下
 
 ![KernalVersion](./assets/Find the kernel version of Linux.png)
-
+=======
 ---
 
 #### 2. Virtual box安装完Ubuntu后新添加的网卡如何实现系统开机自动启用和自动获取IP？
 
 假设当前虚拟机的网卡情况如下：
-
 ![](./assets/InternetCardInformation.png)
 
 使用`ip a`命令查看当前系统内的网络情况
@@ -70,7 +69,7 @@ uname -a
 之后再次使用`ip a`指令查看
 
 ![](./assets/SystemInternetCardInformation-1691246555777-6.png)
-
+=======
 可以看到，由于配置了DHCP服务器，并且采用冷启动方式，系统自动为新添加的网卡分配了一个IP地址和开机自启
 
 ---
@@ -105,7 +104,7 @@ test
 在Windows中，可以使用`ipconfig`查看
 
 ![](./assets/hostipaddress.png)
-
+=======
 之后，可以使用`scp`进行文件传送了
 
 在虚拟机中输入如下命令
@@ -115,12 +114,13 @@ scp test.txt yinya@192.168.100.138:C:/Users/yinya/Desktop/
 ```
 
 遇到了问题
-
 ![](./assets/problem.png)
 
 上网搜索解决方案，发现本机Windows中没有安装`OpenSSH-Server`服务
 
 ![](./assets/reason.png)
+=======
+上网搜索解决方案，发现本机Windows中没有安装`OpenSSH-Server`服务
 
 安装后继续尝试
 
@@ -148,11 +148,10 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 之后再次进行尝试
 
 传输成功
-
 ![](./assets/success.png)
 
 ![](./assets/file.png)
-
+=======
 ##### 3.2 宿主机文件传输至虚拟机
 
 在宿主机中新建文件`test2.txt`并输入以下内容
@@ -170,7 +169,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
 成功
 
 ![](./assets/transport2.png)
-
+=======
 ---
 
 #### 4. 配置SSH免密登录
@@ -181,12 +180,13 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
    ssh-keygen
    ```
 
+
    ![](./assets/kengen.png)
 
 ​		`ls`一下生成目录，可以看到出现了两个文件
 
-​		<img src="./assets/kengen2.png" style="zoom: 67%;" />
-
+		<img src="./assets/kengen2.png" style="zoom: 67%;" />
+=======
 ​		其中`id_rsa.pub`为公钥，需要上传至服务器（此处为虚拟机）中
 
 2. 上传公钥
@@ -200,7 +200,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
    遇到问题，提示命令不存在
 
    ![](./assets/problem2.png)
-
+=======
    上网查找资料发现，需要使用`scp`指令上传
 
    ```bash
@@ -225,7 +225,7 @@ scp yinya@192.168.100.138:C:\Users\yinya\Desktop\test2.txt /home/test/ # 远程�
    退出原ssh连接，重新连接，无需输入密码，成功
 
    ![](./assets/success2.png)
-
+=======
 ---
 
 ### 参考资料
